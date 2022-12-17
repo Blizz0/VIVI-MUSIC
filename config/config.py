@@ -7,13 +7,13 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "12696592"))
+API_ID = int(getenv("API_ID", "15039244"))
 
-API_HASH = getenv("API_HASH","de5edd6a410e89ba6c3fc85604fc3b57")
+API_HASH = getenv("API_HASH","7ad462f23bd323421339cbcb7b10d893")
 
-BOT_TOKEN = getenv("BOT_TOKEN","5636013818:AAF1Zco5j-j9Kl7TXmkYrDpJi4yxGv8rduI")
+BOT_TOKEN = getenv("BOT_TOKEN","5810602588:AAFee7uWE65y5EwbtyzrNMV_MfJoQtj_INc")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://musicbot:musicbot@cluster0.508e9zd.mongodb.net/?retryWrites=true&w=majority")
 
 DURATION_LIMIT_MIN = int(
     getenv("DURATION_LIMIT", "90")
@@ -23,12 +23,12 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
 )
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001717661886"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001500880176"))
 
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "UTOPIA'S MELODY")
 
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5358294860").split())
+    map(int, getenv("OWNER_ID", "5012889763").split())
 )
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -37,7 +37,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/otakubinge/VIVI-MUSIC-ROBOT",
+    "https://github.com/Blizz0/VIVI-MUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -62,7 +62,7 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "5"))
 
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "6"))
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/otakubinge/VIVI-MUSIC-ROBOT")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Blizz0/VIVI-MUSIC")
 
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
@@ -86,9 +86,9 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", "BQCpq4tJSqJeoZ1fcOqFhlBrxPjmCXLWsx2ODkaWGBvA3olT8t5dOhbmJDJxBww_Np0HFaCn5zUtpNy1LMOChSBOj37G_AsFcmy1SPsQxiA7q8VeeSwCoBuSUKx39Va9tCOuP1zTzJ-YzYPQAfuqXyUg-D_jX42AomWKWui6A01W7Ip3OzUaOOHtqzTnreQL7Jfd_wBkdZpR7PbcmsJSIrHR21K8EFxHJFGlb00nTzF0eAuQF8GjAR0VlSjQWA0RRlskVNu9nkSME41OUoT1yah_efFu9hAw6UiQAYIj10YYSvPlXxujYj6AYgQThCkV3AeiHzsKi_ehCCLOVgyR_LK1AAAAAT9hF0wA")
-STRING2 = getenv("STRING_SESSION2", "BQAPGNCdu6TBm4p72RS0BSSaXUrr_HqviRlaGryNCm0hluU5lIOo6R5uOa73qxF88vzxAZZ0BWYxcL8cmIF0aW7OIkpv0R7Coh2OmQhIQZvAmm6TZAnBYfxTwVOn-cyXCByww3jrwMHjnsH3MpF-ZezPj-TsVNFT2SJEMuoKNCcaZicbL0ujoKGYv5fuInqp8J5MruBoPWYFisnW1Ajb3r0NM0gT6VXqgrznUGAAIT21FPvXDz70bgKw6YbZ303c2gUevsSC70xfi2NeF7pt-H5fnfczySjSbfWGxs-BBrOBYWWruwkxBfsw3fuOWgmRteQhVWH5hnMx3yb_fiV9iyxMAAAAAT9hF0wA")
-STRING3 = getenv("STRING_SESSION3", "BQDDbdgoWlRz-e7czHVCXgcWNyd867N3NE4Xduv4gsWAzBcXxNtglKsBLJW7C3Mxfm1TJz9g2sJjFaKG7FYR3qKzGKrLMIaCaW0jybTrjFL4RU7VNtYxhALNwfAECiYcJujQ_u_ClJhczBHRJb_snxwoMlhbKI1IxgrwqLJBBqVI8whpV83-2N4H99XrzTrwsJF4XjamtaOiFYOgBmtd6jx4BmkLxC9myeNq4AixSJAqyRrfvZb3vnPmX8ltxR_CV_wo1m_kUpwsFmMlA1aQjeVIWXwrM8-tfvsOnvdE1L_PLyyGADYoMVMjB4FZo5SVmgViEjf8Zd6qQT0lGbllPTrVAAAAAT9hF0wA")
+STRING1 = getenv("STRING_SESSION", "BQDlewwAmNsavr-pD1Phjto9KZXxiTjMnLsi64kkXu5jl2YecOYQ7XqSEp2okYCwjIbElH8QCbH5qdmHxj8S9Dw205JMLaj3Bqo0K0XcKyB7ANUSbTf4bni52mExLqnoFQwtg0VFUFxjXfgNO5FaQCeJe3BvVqOY9BodUXVCpE6z16cAfZhHhQIChK4Poan6OaND2pHRNm-zurLLmfSAULClr5GzLzLe3_9mWPQUhGZU0t4eEkjTCuCvVa_qrjcewd_ksccmoNgq_iakN9opxSwQ9qTNtlEVftKahXVcSRxnMQ-2hHe0JrV9b8_1T2A2mPwKbCpjJe21VK27zViwk3ZzeibSAgAAAAEqyqCjAA")
+STRING2 = getenv("STRING_SESSION2", None)
+STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
